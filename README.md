@@ -1,2 +1,6 @@
 # Datastructure
-stack,queue,list,tree,heap
+- stack
+- queue
+- list
+- tree
+- heap
