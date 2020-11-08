@@ -95,8 +95,8 @@ bool del_node_at(LLIST* list, unsigned int index){
 }
 
 void* get_data_at(LLIST* list, unsigned int index){
-	if(list->count == 0) return false;
-	else if(index >= list->count) return false;
+	if(list->count == 0) return NULL;
+	else if(index >= list->count) return NULL;
 	void* hook;
 	int i = 0;
 	list -> pos = list -> front;
