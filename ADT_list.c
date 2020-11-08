@@ -110,7 +110,7 @@ bool del_node_at(LLIST* list, unsigned int index){
 	else 
 	{
 		pre -> next = list -> pos-> next;
-		free(list->pos);
+		free(list -> pos);
 		list -> pos = NULL;
 		(list -> count)--;
 		return true;
@@ -130,6 +130,6 @@ void* get_data_at(LLIST* list, unsigned int index){
 		list -> pos = list -> pos -> next;
 		i++;
 	}
-	hook = list-> pos -> data_ptr ;
+	hook = list -> pos -> data_ptr ;
 	return hook;
 }
