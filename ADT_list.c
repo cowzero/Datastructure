@@ -98,7 +98,7 @@ void* get_data_at(LLIST* list, unsigned int index){
 	if(list->count == 0) return false;
 	else if(index >= list->count) return false;
 	void* hook;
-	int i = 1;
+	int i = 0;
 	list -> pos = list -> front;
 	while( i !=index){
 	list -> pos = list -> pos -> next;
