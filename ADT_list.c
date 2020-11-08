@@ -95,6 +95,7 @@ bool del_node_at(LLIST* list, unsigned int index){
 		free(list ->pos);
 		list -> pos = NULL;
 		(list -> count)--;
+		return true;
 	}
 	
 	if(index == (list->count-1))
