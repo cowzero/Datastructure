@@ -69,7 +69,7 @@ bool del_node_at(LLIST* list, unsigned int index){
 	if(list->count == 0) return false;
 	else if(index >= list->count) return false;
 	
-	if(list->count ==1) 
+	if(list->count == 1) 
 	{
 		free(list->front);
 		list -> front = NULL;
@@ -92,13 +92,13 @@ bool del_node_at(LLIST* list, unsigned int index){
 	if(index == 0)
 	{
 		list -> front = list -> pos -> next;
-		free(list ->pos);
+		free(list -> pos);
 		list -> pos = NULL;
 		(list -> count)--;
 		return true;
 	}
 	
-	if(index == (list->count-1))
+	if(index == (list->count - 1))
 	{
 		list -> rear = pre;//before remove node should think the node's purpose, it is rear, so should redefine rear
 		pre -> next = NULL;// after redefine rear, should left it's next value is null
@@ -111,8 +111,8 @@ bool del_node_at(LLIST* list, unsigned int index){
 	{
 		pre -> next = list -> pos-> next;
 		free(list->pos);
-		list ->pos = NULL;
-		(list->count)--;
+		list -> pos = NULL;
+		(list -> count)--;
 		return true;
 	}
 }
