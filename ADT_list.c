@@ -104,7 +104,7 @@ bool del_node_at(LLIST* list, unsigned int index){
 		pre -> next = NULL;// after redefine rear, should left it's next value is null
 		free(list -> pos);//now, you can remove the node's value
 		list -> pos = NULL;//after remove the value, should remove it's address value
-		(list->count)--;// always think about list's total members.
+		(list -> count)--;// always think about list's total members.
 		return true;
 	}	
 	else 
